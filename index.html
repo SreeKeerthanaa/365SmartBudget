@@ -254,11 +254,17 @@
             <div id="contact">
                 <h1 style="color: #35A962;text-align: center;" class="gradient_color">Contact Us</h1>
                 <h1 style="color: #35A962;text-align: center;" class="gradient_color">Get In Touch!</h1>
-                <div style="display: flex;justify-content: space-between;margin: 10px;padding: 10px;width: 899px;"><div ><input placeholder="Your Name" style="margin: 10px;padding: 10px;border-radius: 10px;width: 319px;height: 40px;border: 2px solid #919294 "/></div><div><input placeholder="Your Email" style="margin: 10px;padding: 10px;border-radius: 10px;width: 319px;
-                    height: 40px;border: 2px solid #919294	"/></div></div>
-                <div style="margin: 10px;padding: 10px;width: 872px;"><input placeholder="Subject" style="margin: 10px;padding: 10px;width: 100%;height:40px;border-radius: 10px;border: 2px solid #919294"/></div>
-                <div style="margin: 10px;padding: 10px;width: 872px;"><textarea placeholder="Message" style="margin: 10px;padding: 10px;width: 100%;border-radius: 10px;border: 2px solid #919294;height: 155px;	"></textarea></div>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                <div style="display: flex;justify-content: space-between;margin: 10px;padding: 10px;width: 899px;">
+                        <input type="hidden" name="access_key" value="a947cc18-4a4b-4a93-a6d5-f87548a7696e">
+                    <div ><input placeholder="Your Name" style="margin: 10px;padding: 10px;border-radius: 10px;width: 319px;height: 40px;border: 2px solid #919294 " required name="name"/></div><div><input placeholder="Your Email" style="margin: 10px;padding: 10px;border-radius: 10px;width: 319px;
+                    height: 40px;border: 2px solid #919294	" required name="email"/></div></div>
+                <div style="margin: 10px;padding: 10px;width: 872px;"><input placeholder="Subject" style="margin: 10px;padding: 10px;width: 100%;height:40px;border-radius: 10px;border: 2px solid #919294" name="subject" required/></div>
+                <div style="margin: 10px;padding: 10px;width: 872px;"><textarea placeholder="Message" style="margin: 10px;padding: 10px;width: 100%;border-radius: 10px;border: 2px solid #919294;height: 155px;" required name="message"></textarea></div>
                 <div style="margin: 10px;padding: 10px;display: flex;justify-content: center;"><button class="button-21" role="button" style="font-family: 'mulish';">Send Message</button></div>
+                </form>
+
             </div>
         </div>
     </body>
