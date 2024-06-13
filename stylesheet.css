@@ -126,11 +126,12 @@ body {
     justify-content: last baseline;   */
 }
 footer {
-    background: black;
+    /* background: black; */
     color: white;
     height: 60px;
     text-align: center;
     padding: 10px 0;
+    
 }
 .footer-content {
     display: flex;
@@ -212,7 +213,10 @@ text-align: center;
     justify-content: last baseline;   */
 }
 footer {
-    background: #35A962;
+    /* background: #35A962; */
+    background: -webkit-linear-gradient(1deg,#496F58 , #35A962 99%);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     color: white;
     height: 60px;
     text-align: center;
@@ -260,7 +264,7 @@ footer {
     height: 55px;
     font-size: 16px;
     border-radius: 10px;
-    background-color: #35A962;
+    /* background-color: #35A962; */
     border: none;
     margin: 10px;
     padding: 10px;
@@ -268,20 +272,23 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background: -webkit-linear-gradient(1deg,#496F58 , #35A962 99%);
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
 }
 .download-button img {
     height: 35px; /* Adjust the height to fit within the button */
     margin-right: 20px;
     margin-left: 20px;
 }
-/* .download-button .text {
-    text-align: right;
-} */
+.download-button .text {
+    color: white;
+}
 
 .top-right-image {
     position: absolute;
     top: -20px;    /* Adjusted to slightly attach the top-right corner */
-    right: -20px;  /* Adjusted to slightly attach the top-right corner */
+    right: 10px;  /* Adjusted to slightly attach the top-right corner */
     width: 80px;
     height: 80px;
 }
